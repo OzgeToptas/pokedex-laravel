@@ -10,15 +10,15 @@
 ## Pokemon api
 
 Setup for localhost
-
+```
 composer install
 cp .env.example .env
 php artisan key:generate
 npm install && npm run build
 php artisan serve
-
+```
 Setup for docker
-
+```
 docker compose up -d
-docker exec -it pokemon bash -c "composer install && cp .env.example .env && php artisan key:generate && npm install && npm run build"
-# pokedex-laravel
+docker exec -it pokemon-2 bash -c "composer install && cp .env.example .env && php artisan key:generate && npm install && npm run build"
+```
